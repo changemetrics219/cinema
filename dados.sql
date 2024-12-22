@@ -1,0 +1,55 @@
+INSERT INTO Cliente (ClienteID, nome, contribuinte) VALUES
+(1, 'Laercio Cruvinel', '123456789'),
+(2, 'Inês Batalha', '987654321'),
+(3, 'Lourenço Cardoso', '111222333'),
+(4, 'João Luz', '444555666'),
+(5, 'Pedro Almeida', '777888999'),
+(6, 'Rita Nunes', '222333444'),
+(7, 'José Oliveira', '555666777'),
+(8, 'Clara Mendes', '888999000'),
+(9, 'Tiago Cruz', '333444555'),
+(10, 'Patrícia Matos', '666777888');
+INSERT INTO Produto (ProdutoID, descricao, embalagem, preco_unitario, iva_unitario) VALUES
+(1, 'Caderno 80 folhas ', 'Unidade', 10.00, 23.00),
+(2, 'Lápis de cor', 'Caixa', 5.00, 23.00),
+(3, 'Borracha', 'Unidade', 2.50, 23.00),
+(4, 'Canetas esferográficas', 'Pacote', 20.00, 23.00),
+(5, 'Tesoura', 'Unidade', 15.00, 23.00),
+(6, 'Cola', 'Unidade', 30.00, 23.00),
+(7, 'Marcador de texto', 'Pacote', 8.00, 23.00),
+(8, 'X-ato', 'Unidade', 3.00, 23.00),
+(9, 'Bloco de notas', 'Unidade', 12.00, 23.00),
+(10, 'Isqueiro', 'Caixa', 25.00, 23.00);
+INSERT INTO Venda (num_venda, ClienteID, data, local) VALUES
+(1, 1, '2024-12-01', 'Lisboa'),
+(2, 2, '2024-12-02', 'Porto'),
+(3, 3, '2024-12-03', 'Faro'),
+(4, 4, '2024-12-04', 'Lisboa'),
+(5, 5, '2024-12-05', 'Porto'),
+(6, 6, '2024-12-06', 'Coimbra'),
+(7, 7, '2024-12-07', 'Aveiro'),
+(8, 8, '2024-12-08', 'Braga'),
+(9, 9, '2024-12-09', 'Guarda'),
+(10, 10, '2024-12-10', 'Lisboa');
+INSERT INTO VendaProduto (num_venda, ProdutoID, quantidade, desconto, iva_produto) VALUES
+(1, 1, 2, 0.00, 4.60),
+(2, 2, 5, 0.50, 5.75),
+(3, 3, 10, 1.00, 5.75),
+(4, 4, 1, 2.00, 4.60),
+(5, 5, 3, 0.00, 3.45),
+(6, 6, 4, 0.00, 9.20),
+(7, 7, 2, 1.00, 1.84),
+(8, 8, 4, 2.00, 2.76),
+(9, 9, 1, 1.00, 3.68),
+(10, 10, 2, 0.00, 4.60);
+INSERT INTO ValorProduto (VendaProdutoID, valor_total) VALUES
+(1, 20.00),
+(2, 25.00),
+(3, 50.00),
+(4, 18.00),
+(5, 45.00),
+(6, 120.00),
+(7, 16.00),
+(8, 80.00),
+(9, 12.00),
+(10, 46.00);
